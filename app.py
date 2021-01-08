@@ -29,7 +29,7 @@ def annotage(data, verbose):
 
 @click.command()
 @click.option('--input-data', '-i', help='data', prompt='input data .json')
-@click.option('--verbose', '-v', default=False, help='-v for verbose mode', type=bool, is_flag=True)
+@click.option('--verbose', '-v', help='-v for verbose mode', type=bool, is_flag=True)
 def main(input_data, verbose):
     data = parser(input_data)
     (header, items) = annotage(data, verbose)

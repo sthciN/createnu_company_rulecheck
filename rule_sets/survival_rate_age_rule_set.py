@@ -29,7 +29,8 @@ class SurvivalRateAgeRuleSet(RuleSetFactory):
         return min * 365 <= self.diff_days < max * 365
 
     def _annotation_match(self, index):
-        annotation_item = copy(self._annotation_list[index][:2] if self._verbose == False else self._annotation_list[index])
+        annotation_item = copy(self._annotation_list[index])
+        annotation_item = annotation_item[:2] if not self._verbose else annotation_item
         if not index:
             annotation_item[1] = annotation_item[1].format(str(int(self.diff_days/30)))
         else:
@@ -41,4 +42,4 @@ class SurvivalRateAgeRuleSet(RuleSetFactory):
             if self._rule_check(i, i+1):
                 annotation = self._annotation_match(i)
                 return annotation
-        return ['']*2 if self._verbose == False else ['']*4
+        return ['']*2 if not self._verbose else ['']*4
