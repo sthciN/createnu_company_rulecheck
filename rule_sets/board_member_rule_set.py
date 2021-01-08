@@ -5,10 +5,10 @@ class BoradMemberRuleSet(RuleSetFactory):
     company_status_lt_a = ['pre-seed', 'seed']
     company_status_gt_a = ['a+', 'b', 'c']
     board_role_list = ['management', 'investors', 'independent']
+    annotation_values = []
 
     def __init__(self, data, verbose):
-        super().__init__(data)
-        self._verbose = verbose
+        super().__init__(data, verbose)
         self._category = self.categories[1]
         self.ruleset = [
             'IF (company_stage = any stage) and All founders are on the board',
@@ -34,9 +34,9 @@ class BoradMemberRuleSet(RuleSetFactory):
             {'annotation': 'None of the founders are on the board of directors', 'status': self.status[0], 'rule': self.rule_no_founders_on_board},
             {'annotation': 'The majority of the board is controlled by non-founders', 'status': self.status[0], 'rule': self.rule_pre_seed_or_seed_even_board_seat},
             {'annotation': 'Some of the co-founders are on the board, the majority control by founders and the number of board seats are odd', 'status': self.status[2], 'rule': self.rule_some_founders_on_board_majority_control_odd_board_seat},
-            {'annotation': 'The board size is [x] is higher than typical for a [pre-seed or seed] company stage', 'status': self.status[1], 'rule': self.rule_nontypical_board_size},
+            {'annotation': 'The board size is {} is higher than typical for a [pre-seed or seed] company stage', 'status': self.status[1], 'rule': self.rule_nontypical_board_size},
             {'annotation': 'The number of board seats are even', 'status': self.status[1], 'rule': self.rule_even_board_seat},
-            {'annotation': 'The number of board seats, [x] are odd', 'status': self.status[2], 'rule': self.rule_odd_board_seat},
+            {'annotation': 'The number of board seats, {} are odd', 'status': self.status[2], 'rule': self.rule_odd_board_seat},
             {'annotation': 'Board of directors composition is: [e.g.1] management, [e.g.1] investor, [e.g.1] independent and the board size is odd', 'status': self.status[2], 'rule': self.rule_equal_board_role_odd_seat},
             {'annotation': 'Board of directors composition is: [e.g.2] management, [e.g.2] investor, [e.g.2] independent and the board size is even', 'status': self.status[1], 'rule': self.rule_equal_board_role_even_seat},
             {'annotation': 'Board of directors composition is: [e.g.2] management, [e.g.1] investor, [e.g.1] independent and the board size is odd', 'status': self.status[2], 'rule': self.rule_composed_board_role_odd_seat},
@@ -114,7 +114,9 @@ class BoradMemberRuleSet(RuleSetFactory):
         return len(independent)
 
     def annotation_info_gen(self, index):
-        return [self.annotations[index]['status'], self.annotations[index]['annotation']] if not self._verbose else [self.annotations[index]['status'], self.annotations[index]['annotation'], self._category, self.ruleset[index]]
+        annotation_item = self.annotations[index]
+        annotation_message = annotation_item['annotation'].format(*self.annotation_values)
+        return [annotation_item['status'], annotation_message] if not self._verbose else [annotation_item['status'], annotation_message, self._category, self.ruleset[index]]
 
     #######################################################################################
 
@@ -149,6 +151,7 @@ class BoradMemberRuleSet(RuleSetFactory):
     def rule_nontypical_board_size(self):
         # pre-seed or seed
         board_size = len(self.data['finantials'][0]['boards'])
+        self.annotation_values.append(board_size)
         if self.check_company_status_lt_a() and board_size > 5 or board_size == 1:
             return True
         return False
@@ -160,6 +163,7 @@ class BoradMemberRuleSet(RuleSetFactory):
         return False
     
     def rule_odd_board_seat(self):
+        self.annotation_values.append(len(self.data['finantials'][0]['boards']))
         if self.has_any_status() and not self.even_board_seat():
             return True
         return False
@@ -271,6 +275,7 @@ class BoradMemberRuleSet(RuleSetFactory):
     def annotage(self):
         output = []
         for index in range(len(self.annotations)):
+            self.annotation_values = []
             if self.annotations[index]['rule']():
                 output.append(self.annotation_info_gen(index))
         return self.empty_annotation_info() if not len(output) else output

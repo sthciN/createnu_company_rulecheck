@@ -2,8 +2,9 @@ from abc import ABC, abstractmethod
 from ui import UI
 
 class RuleSetFactory(ABC):
-    def __init__(self, data):
+    def __init__(self, data, verbose):
         self.data = data
+        self._verbose = verbose
         self.status = (UI.color('Risk', 'red'), UI.color('Watchful', 'yellow'), UI.color('Good Standing', 'green'))
         self.categories = ('[Company profile]', '[Financial - Legal Structure]')
     

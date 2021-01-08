@@ -1,6 +1,7 @@
 import json
 import click
 import os
+import sys
 from rule_sets import SurvivalRateAgeRuleSet
 from rule_sets import BoradMemberRuleSet
 from ui import UI
@@ -8,13 +9,10 @@ from ui import UI
 def parser(input_data):
     try:
         with open(input_data, 'r') as f:
-            data = json.load(f)
-        f.close()
-        return data
+            return json.load(f)
+    except:
+        sys.exit('There is an error opening input file.')
 
-    except Exception as err:
-        # TODO catch error
-        print(str(err))
 
 def annotage(data, verbose):
     header = ["status", "annotation"]   

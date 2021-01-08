@@ -9,8 +9,7 @@ class SurvivalRateAgeRuleSet(RuleSetFactory):
     diff_days = None
 
     def __init__(self, data, verbose):
-        super().__init__(data)
-        self._verbose = verbose
+        super().__init__(data, verbose)
         self._category = self.categories[0]
         self._annotation_list = [
             [self.status[0], 'Company is a young company that only has been operating {} month[s]', self._category, 'If company life_time<12 months THEN'],
