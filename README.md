@@ -39,5 +39,5 @@ python app.py
 
 ### Arguments
 
-- `--verbose`(`-v`) verbose/debug mode -is flag
+- `--verbose`(`-v`) verbose/debug mode
 - `--input-data`(`-i`) input file path
