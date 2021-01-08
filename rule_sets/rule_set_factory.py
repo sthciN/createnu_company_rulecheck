@@ -6,6 +6,9 @@ class RuleSetFactory(ABC):
         self.data = data
         self.status = (UI.color('Risk', 'red'), UI.color('Watchful', 'yellow'), UI.color('Good Standing', 'green'))
         self.categories = ('[Company profile]', '[Financial - Legal Structure]')
+    
+    def empty_annotation_info(self):
+        return ['']*2 if not self._verbose else ['']*4
 
     @abstractmethod
     def annotage(self):

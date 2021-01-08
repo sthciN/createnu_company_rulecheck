@@ -17,7 +17,7 @@ class UI():
         x = PrettyTable()
         x._max_width = {'annotation': 60, 'rule': 50}
         x.field_names = header
-        x.add_row(items)
+        x.add_rows(items)
         x.align = 'l'
         print(x)
 

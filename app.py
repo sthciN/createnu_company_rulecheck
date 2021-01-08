@@ -17,15 +17,13 @@ def parser(input_data):
         print(str(err))
 
 def annotage(data, verbose):
-    # try:
     header = ["status", "annotation"]   
     if verbose:
         header.extend(['category', 'rule'])
-    
-    return (header, SurvivalRateAgeRuleSet(data, verbose).annotage())
-        # TODO
-        # member_ans = BoradMemberRuleSet(data).annotage()
-        # annotage.extend(survival_ans, member_ans)
+    result = []
+    result.append(SurvivalRateAgeRuleSet(data, verbose).annotage())
+    result.extend(BoradMemberRuleSet(data, verbose).annotage())
+    return (header, result)
 
 @click.command()
 @click.option('--input-data', '-i', help='data', prompt='input data .json')

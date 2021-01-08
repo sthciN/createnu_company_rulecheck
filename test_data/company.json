@@ -10,7 +10,7 @@
         "established_date": "2018-10-30",
         "short_description": "Credit Karma for startups",
         "long_description": "Standarize and democrotize the private equity by establishing a credit score platform that can act as a market place",
-        "current_stage": "Pre-seed",
+        "current_stage": "A+",
         "address": {
             "street_1": "x",
             "street_2": "xx",
@@ -65,9 +65,9 @@
                     "salary": 200000.0
                 }
             ],
-            "board_member": true,
+            "board_member": false,
             "salary": 80000.0,
-            "shares": 5.3,
+            "shares": 50.3,
             "ownership_percentage": 0.0,
             "vesting_schedule": 4,
             "vesting_start_date": "08-01-2018",
@@ -348,7 +348,31 @@
                     "first_name" : "",
                     "last_name" : "",
                     "current_position" : "",
-                    "board_role" : "", 
+                    "board_role" : "investors", 
+                    "linkedin" : "",
+                    "twitter" : ""
+                },
+                {
+                    "first_name" : "",
+                    "last_name" : "",
+                    "current_position" : "",
+                    "board_role" : "management", 
+                    "linkedin" : "",
+                    "twitter" : ""
+                },
+                {
+                    "first_name" : "",
+                    "last_name" : "",
+                    "current_position" : "",
+                    "board_role" : "independent", 
+                    "linkedin" : "",
+                    "twitter" : ""
+                },
+                {
+                    "first_name" : "",
+                    "last_name" : "",
+                    "current_position" : "",
+                    "board_role" : "independent", 
                     "linkedin" : "",
                     "twitter" : ""
                 }
