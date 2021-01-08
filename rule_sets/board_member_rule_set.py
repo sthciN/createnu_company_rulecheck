@@ -93,7 +93,6 @@ class BoradMemberRuleSet(RuleSetFactory):
 
 
     def even_board_seat(self):
-        # TODO financials is a list
         if len(self.data['finantials'][0]['boards']) % 2:
             return False
         return True        
@@ -181,10 +180,10 @@ class BoradMemberRuleSet(RuleSetFactory):
         return False
 
     def rule_composed_board_role_odd_seat(self):
-        # A+
         managements = self.borad_role_management_number()
         independents = self.borad_role_independent_number()
         investors = self.borad_role_investors_number()
+        # A+
         if (
             self.check_company_status_gt_a() and
             self.some_founders_on_board() and 
@@ -196,10 +195,10 @@ class BoradMemberRuleSet(RuleSetFactory):
         return False
 
     def rule_composed_management_board_role_even_seat(self):
-        # A+
         managements = self.borad_role_management_number()
         independents = self.borad_role_independent_number()
         investors = self.borad_role_investors_number()
+        # A+
         if (
             self.check_company_status_gt_a() and
             self.some_founders_on_board() and 
@@ -211,10 +210,10 @@ class BoradMemberRuleSet(RuleSetFactory):
         return False
 
     def rule_composed_independent_board_role_odd_seat(self):
-        # A+
         managements = self.borad_role_management_number()
         independents = self.borad_role_independent_number()
         investors = self.borad_role_investors_number()
+        # A+
         if (
             self.check_company_status_gt_a() and
             self.some_founders_on_board() and 
@@ -226,10 +225,10 @@ class BoradMemberRuleSet(RuleSetFactory):
         return False
 
     def rule_composed_independent_board_role_even_seat(self):
-        # A+
         managements = self.borad_role_management_number()
         independents = self.borad_role_independent_number()
         investors = self.borad_role_investors_number()
+        # A+
         if (
             self.check_company_status_gt_a() and
             self.some_founders_on_board() and 
@@ -241,10 +240,10 @@ class BoradMemberRuleSet(RuleSetFactory):
         return False
 
     def rule_composed_investors_board_role_odd_seat(self):
-        # A+
         managements = self.borad_role_management_number()
         independents = self.borad_role_independent_number()
         investors = self.borad_role_investors_number()
+        # A+
         if (
             self.check_company_status_gt_a() and
             self.some_founders_on_board() and 
@@ -256,10 +255,10 @@ class BoradMemberRuleSet(RuleSetFactory):
         return False
 
     def rule_composed_investors_board_role_even_seat(self):
-        # A+
         managements = self.borad_role_management_number()
         independents = self.borad_role_independent_number()
         investors = self.borad_role_investors_number()
+        # A+
         if (
             self.check_company_status_gt_a() and
             self.some_founders_on_board() and 
@@ -270,7 +269,7 @@ class BoradMemberRuleSet(RuleSetFactory):
             return True
         return False
 
-        #######################################################################################
+    #######################################################################################
     
     def annotage(self):
         output = []
