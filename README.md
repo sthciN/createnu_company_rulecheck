@@ -1,11 +1,5 @@
 # CreateNU Test Case
 
-For running the code `python app.py`
-
-### Options
-- [x] `-v` verbose/debug mode -is flag
-- [x] `-i` input file path
-
 ## Structure
 
 ```
@@ -28,3 +22,22 @@ In the ruleset module, Both Survival Rate/Age and Board Member rulsets are inher
 
 ## UI
 To print the data, I implemented a user interface that can handle the data shown to the user, the table, colors and styles.
+
+## CLI
+
+Install the requirements:
+
+```sh
+pip3 install -r requirements.txt
+```
+
+Run the program:
+
+```sh
+python app.py
+```
+
+### Arguments
+
+- `-v` verbose/debug mode -is flag
+- `-i` input file path
