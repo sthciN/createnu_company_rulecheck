@@ -1,0 +1,400 @@
+{
+    "profile": {
+        "registered": true,
+        "name": "Createnu",
+        "cb_url": "www.createnu.com",
+        "website": "www.createnu.com",
+        "contact_email": "contact@createnu.com",
+        "phone": "xxx-xxx-xxxx",
+        "entity_type": "C-corp",
+        "established_date": "2012-10-01",
+        "short_description": "Credit Karma for startups",
+        "long_description": "Standarize and democrotize the private equity by establishing a credit score platform that can act as a market place",
+        "current_stage": "Pre-seed",
+        "address": {
+            "street_1": "x",
+            "street_2": "xx",
+            "city": "Los Angeles",
+            "state": "CA",
+            "zip_code": "00000",
+            "headquarter": true
+        },
+        "num_of_employees": 4,
+        "acknowledge": false,
+        "is_published": false
+    },
+    "founders": [
+        {
+            "fname": "Alex",
+            "lname": "Mojtahedi",
+            "email": "alex@createnu.com",
+            "gender": "Male",
+            "age": 39,
+            "linkedin": "XX",
+            "twitter": "XX",
+            "address": {
+                "street_1": "x",
+                "street_2": "xx",
+                "city": "Los Anegeles",
+                "state": "CA",
+                "zip_code": "00000",
+                "headquarter": true
+            },
+            "current_role": "CEO",
+            "time_commitment": "Full Time",
+            "is_student": true,
+            "educations": [
+                {
+                    "school_name": "Calpoly Pomona",
+                    "degrees": "Master ",
+                    "field_of_study": "Computer Science",
+                    "begin_year": "2010",
+                    "end_year": "2012",
+                    "location": "Los Angeles"
+                }
+            ],
+            "work_experiences": [
+                {
+                    "company_name": "Plug and Play",
+                    "job_title": "MD",
+                    "is_senior": true,
+                    "start_date": "2017",
+                    "end_date": "2020",
+                    "industry_sector": "Venture Capital",
+                    "location": "Los Angeles",
+                    "salary": 200000.0
+                }
+            ],
+            "board_member": true,
+            "salary": 80000.0,
+            "shares": 5.3,
+            "ownership_percentage": 0.0,
+            "vesting_schedule": 4,
+            "vesting_start_date": "08-01-2018",
+            "serial_entreprenuer": [
+                {
+                    "company_name": "xxxx",
+                    "company_exit": "Acquired",
+                    "company_amount_sold": 10000000.0
+                },
+                {
+                    "company_name": "xxxx",
+                    "company_exit": "Acquired",
+                    "company_amount_sold": 25000000.0
+                }
+            ],
+            "relationship_type": "Friends",
+            "how_long": 4.0
+        },
+        {
+            "fname": "Mehdi",
+            "lname": "Yahyanejad",
+            "email": "Mehdi@createnu.com",
+            "gender": "Male",
+            "age": 39,
+            "linkedin": "XX",
+            "twitter": "XX",
+            "address": {
+                "street_1": "x",
+                "street_2": "xx",
+                "city": "Los Anegeles",
+                "state": "CA",
+                "zip_code": "00000",
+                "headquarter": true
+            },            "current_role": "CTO",
+            "time_commitment": "Full Time",
+            "is_student": false,
+            "educations": [
+                {
+                    "school_name": "Calpoly Pomona",
+                    "degrees": "Master ",
+                    "field_of_study": "Computer Science",
+                    "begin_year": "2010",
+                    "end_year": "2012",
+                    "location": "Los Angeles"
+                }
+            ],
+            "work_experiences": [
+                {
+                    "company_name": "Plug and Play",
+                    "job_title": "MD",
+                    "is_senior": true,
+                    "start_date": "2017",
+                    "end_date": "2020",
+                    "industry_sector": "Venture Capital",
+                    "location": "Los Angeles",
+                    "salary": 200000.0
+                }
+            ],
+            "board_member": true,
+            "salary": 80000.0,
+            "shares": 5.3,
+            "ownership_percentage": 0.0,
+            "vesting_schedule": 4,
+            "vesting_start_date": "05-01-2020",
+            "serial_entreprenuer": [
+                {
+                    "company_name": "xxxx",
+                    "company_exit": "Acquired",
+                    "company_amount_sold": 10000000.0
+                }
+            ],
+            "relationship_type": "Friends",
+            "how_long": 4.0
+        }
+    ],
+    "team": [
+        {
+            "fname": "Danny",
+            "lname": "Fu",
+            "email": "danny@createnu.com",
+            "gender": "Male",
+            "age": 38,
+            "linkedin": "XX",
+            "twitter": "XX",
+            "address": {
+                "street_1": "x",
+                "street_2": "xx",
+                "city": "Los Anegeles",
+                "state": "CA",
+                "zip_code": "00000",
+                "headquarter": true
+            },
+            "current_role": "Senior Software Engineer",
+            "time_commitment": "Full Time",
+            "is_student": false,
+            "educations": [
+                {
+                    "school_name": "Calpoly Pomona",
+                    "degrees": "Master ",
+                    "field_of_study": "Computer Science",
+                    "begin_year": "2010",
+                    "end_year": "2012",
+                    "location": "Los Angeles"
+                }
+            ],
+            "work_experiences": [
+                {
+                    "company_name": "UCLA",
+                    "job_title": "Data Analyst",
+                    "is_senior": true,
+                    "start_date": "2014",
+                    "end_date": "2020",
+                    "industry_sector": "Software",
+                    "location": "Los Angeles",
+                    "salary": 120000.0
+                }
+            ]
+        },
+        {
+            "fname": "Bob",
+            "lname": "foo",
+            "email": "foo@createnu.com",
+            "gender": "Male",
+            "age": 34,
+            "linkedin": "XX",
+            "twitter": "XX",
+            "address": {
+                "street_1": "x",
+                "street_2": "xx",
+                "city": "Los Anegeles",
+                "state": "CA",
+                "zip_code": "00000",
+                "headquarter": true
+            },
+            "current_role": "Senior Software Engineer",
+            "time_commitment": "Full Time",
+            "is_student": false,
+            "educations": [
+                {
+                    "school_name": "Calpoly Pomona",
+                    "degrees": "Master ",
+                    "field_of_study": "Computer Science",
+                    "begin_year": "2010",
+                    "end_year": "2012",
+                    "location": "Los Angeles"
+                }
+            ],
+            "work_experiences": [
+                {
+                    "company_name": "UCLA",
+                    "job_title": "Data Analyst",
+                    "is_senior": true,
+                    "start_date": "2014",
+                    "end_date": "2020",
+                    "industry_sector": "Software",
+                    "location": "Los Angeles",
+                    "salary": 120000.0
+                }
+            ]
+        }
+    ],
+    "product": {
+        "problem_statement": "Private equity is very fragmented, exclusive and traditional. Over 93% of the VC investment fails every year and its get harder to raise capital for startups as more entrerpunures and innovations join startup ecosystem globally.",
+        "business_model": "",
+        "solution": "",
+        "product_stage": "BTC",
+        "solution_type": "",
+        "key_differentiates": "Market place, 10x cheaper",
+        "pivot": "",
+        "pivot_date": "",
+        "regulatory_risks": "",
+        "estimated_approval_date": "",
+        "region_expansion_phases": "",
+        "projected_date": "",
+        "cheaper_solution": "",
+        "faster_solution": "",
+        "better_technology": "",
+        "barrier_of_entry": "",
+        "tech_startup": true,
+        "proprietary_technology": true,
+        "patent": "",
+        "patent_url": "",
+        "trademarks": "",
+        "trademarks_url": "",
+        "product_screenshop": ""
+    },
+    "market_opportunity": {
+        "primary_industry_sector": "Fintech",
+        "secondary_industry_sector": "Venture capital",
+        "industry_sub_sectors": "xx",
+        "targeted_customers": "xx",
+        "penetration_rate": 0.0,
+        "market_volume": 0.0,
+        "avg_sale_price": 0.0,
+        "market_value": 0.0,
+        "total_addressable_market": 500000000000.0,
+        "industry_growth_rate": 7.0,
+        "market_validation": 0.0,
+        "short_description": "xx",
+        "market_website_url": "xx",
+        "exit_strategy": "xx",
+        "exit_projected_timeline": "xx"
+    },
+    "competition": [
+        {
+            "has_competition": false,
+            "type": "",
+            "competition_name": "",
+            "url": "",
+            "size": "",
+            "market_cap": 0.0
+        }
+    ],
+    "revenue": [
+        {
+            "have_revenue": false,
+            "gross_revenue": 0.0,
+            "net_revenue": 0.0,
+            "gmv_gsv": 0.0,
+            "avg_sale_price": 0.0,
+            "rake_percentage": 0.0,
+            "cac_payback": 0.0,
+            "itv_cac_ration": 0.0,
+            "have_kpis": false,
+            "num_of_users": 0.0,
+            "churn_rate": 0.0,
+            "daily_active_users": 0.0,
+            "avg_session_per_seconds": 0.0,
+            "user_growth_rate": 0.0,
+            "retention_rate": 0.0,
+            "projection_revenue": 0.0,
+            "projection_year": 0.0,
+            "num_of_pilots": 0.0,
+            "pilots_value": 0.0,
+            "customer_name": "",
+            "value_of_contract": 0.0
+        }
+    ],
+    "offering": [
+        {
+            "is_open_round" : false,  
+            "bridge_round" : false,
+            "stage" : "",
+            "fundraising_type" : "",
+            "pre_money_valuation" : 0.0,
+            "discount" : 0.0,
+            "round_open_date" : "01-01-2020",
+            "target_close_date" : "01-01-2020", 
+            "round_size" : 0.0,
+            "num_of_runway_month" : 0.0,
+            "investor" : "",
+            "is_lead" : false,
+            "amount" : 0.0,
+            "commitment_type" : "",
+            "investor_type" : "",
+            "build_idea" : 0.0,
+            "widget" : 0.0,
+            "product_development" : 0.0,
+            "marketing" : 0.0,
+            "revenue" : 0.0,
+            "growth" : 0.0
+        }
+    ],
+    "finantials": [
+        {
+            "external_id":"", 
+            "granted_perks": [
+                {
+                    "name": "",
+                    "value": 0.0             
+                }
+            ], 
+            "total_funding_amount" : 0.0,
+            "monthly_burn_rate" : 0.0,
+            "current_runway" : 0.0,
+            "boards" : [
+                {
+                    "first_name" : "",
+                    "last_name" : "",
+                    "current_position" : "",
+                    "board_role" : "", 
+                    "linkedin" : "",
+                    "twitter" : ""
+                }
+            ],
+            "lawyers" : [
+                {
+                    "first_name" : "",
+                    "last_name" : "",
+                    "law_firm_name" : "",
+                    "responsibility" : "",
+                    "law_firm_url" : ""
+                }
+            ],
+            "advisors" : [
+                {
+                    "first_name" : "",
+                    "last_name" : "",
+                    "advisor_role" : ""
+                }
+            ],
+            "references" : [
+                {
+                    "name" : "",
+                    "current_position" : "",
+                    "sns_url" : ""
+                }
+            ],
+            "option_pool_size" : 0.0,
+            "num_of_shares" : 0.0,
+            "allocated_shares" : 0.0,
+            "cpm_founders" : 0.0,
+            "cpm_investors" : 0.0,
+            "cpm_option_pool" : 0.0,
+            "cpm_unallocated" : 0.0,
+            "409a_valuation" : false,
+            "completed_rounds" : [
+                {
+                    "stage" : "",
+                    "fundraising_type" : "",
+                    "opening_date" : "01-01-2020",
+                    "closing_date" : "01-01-2020", 
+                    "pre_money_valuation" : 0.0,
+                    "round_size" : 0.0
+
+                }
+            ]
+        }
+    ]
+}
