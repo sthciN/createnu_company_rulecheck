@@ -6,6 +6,7 @@ from .rule_set_factory import RuleSetFactory
 
 class SurvivalRateAgeRuleSet(RuleSetFactory):
     _max_lifetime = 10
+    diff_days = None
 
     def __init__(self, data, verbose):
         super().__init__(data)
@@ -24,11 +25,15 @@ class SurvivalRateAgeRuleSet(RuleSetFactory):
         ]
 
     def _rule_check(self, min, max):
-        return min * 365 <= (date.today() - date.fromisoformat(self.data['profile']['established_date'])).days < max * 365
+        self.diff_days = (date.today() - date.fromisoformat(self.data['profile']['established_date'])).days
+        return min * 365 <= self.diff_days < max * 365
 
     def _annotation_match(self, index):
         annotation_item = copy(self._annotation_list[index][:2] if self._verbose == False else self._annotation_list[index])
-        annotation_item[1] = annotation_item[1].format(str(index))
+        if not index:
+            annotation_item[1] = annotation_item[1].format(str(int(self.diff_days/30)))
+        else:
+            annotation_item[1] = annotation_item[1].format(str(index))
         return annotation_item
     
     def annotage(self):
